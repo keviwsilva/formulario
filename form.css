@@ -1,0 +1,89 @@
+body{
+
+    font-family: Arial;
+    background-image: linear-gradient(to bottom, rgba(35, 35, 235, 0.815), rgba(3, 3, 93, 0.959));
+
+}
+
+.box{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(165, 165, 253, 0.424);
+    padding: 15px;
+    border-radius: 12px;
+    width: 25%;
+
+}
+fieldset{
+
+    border: 2.5px solid dodgerblue;
+
+}
+
+.box legend{
+
+    border: 1px solid dodgerblue;
+    text-align: center;
+    padding: 8px;
+    background-color: rgba(55, 55, 165, 0.288);
+    border-radius: 9px;
+
+}
+
+.inputbox{
+
+    position: relative;
+
+}
+
+.inputuser{
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;/*quando clica fica com a linha de fora*/
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+
+}
+
+.labelinput{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;/*quando tem none quer dizer q em qualquer lugar que eu clicar no input vai excutar a acao*/
+    transition: .5s;
+
+}
+
+.inputuser:focus ~ .labelinput, .inputuser:valid ~ .labelinput{
+
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+
+}
+#submit{
+
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+#submit:hover{
+
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+
+}

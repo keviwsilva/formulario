@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+        <title>formulario</title>
+        <link rel="stylesheet" href="./css/form.css">
+    </head>
+<body>
+    <div class="box">
+        <form name="frmformulario" method="POST" action="form.php">
+            <fieldset>
+                <legend><b>formulario</b></legend>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="labelinput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="email" name="email" id="email" class="inputuser" required>
+                    <label for="email" class="labelinput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="password" name="senha" id="senha" class="inputuser" required>
+                    <label for="senha" class="labelinput">Senha</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+                    <label for="telefone" class="labelinput">Telefone</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <p>Sexo:</p>
+                    <input type="radio" id="feminino"name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" id="masculino"name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="outro"name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="date" name="data" id="data" class="inputuser" required>
+                    <label for="data"><b>Data de nascimento</b></label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                    <label for="cidade" class="labelinput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="estado" id="estado" class="inputuser" required>
+                    <label for="estado" class="labelinput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="endereço" id="endereço" class="inputuser" required>
+                    <label for="endereço" class="labelinput">Endereco</label>
+                </div><br>
+                <br>
+                <div class="inputbox">
+                    <input type="submit" name="submit" id="submit"  value="Enviar">
+                    
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+    
+
+    <div class="back">
+        <a href="home.html">Voltar</a>
+    </div>
+</body>
+
+</html>
